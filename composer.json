@@ -2,7 +2,23 @@
     "name": "damenjositepu/rouin",
     "description": "Everything you need to develop your route information easily in laravel frameworks",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Damenjo Sitepu",
+            "email": "damenstory@gmail.com"
+        }
+    ],
     "require-dev": {
         "orchestra/testbench": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "damenjositepu\\Rouin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4":{
+            "damenjositepu\\Rouin\\Tests\\": "tests/"
+        }
     }
 }
