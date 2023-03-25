@@ -1,0 +1,8 @@
+{
+    "name": "damenjositepu/rouin",
+    "description": "Everything you need to develop your route information easily in laravel frameworks",
+    "license": "MIT",
+    "require-dev": {
+        "orchestra/testbench": "^8.0"
+    }
+}
