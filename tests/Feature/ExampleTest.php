@@ -4,6 +4,7 @@ namespace damenjositepu\Rouin\Tests;
 
 use damenjositepu\Rouin\CountNumber;
 use damenjositepu\Rouin\HelloWorld;
+use damenjositepu\Rouin\Operator;
 use Orchestra\Testbench\TestCase;
 
 class ExampleTest extends TestCase {
@@ -26,5 +27,18 @@ class ExampleTest extends TestCase {
     {
         $secretNumber = CountNumber::inc()->get();
         $this->assertEquals(4,$secretNumber,'Invalid number!');
+    }
+
+    /** @test */
+    public function testObject()
+    {
+        $secretNumber = CountNumber::get();
+    }
+
+    /** @test */
+    public function testCount()
+    {
+        $count = Operator::choose('*',3)->get();
+        $this->assertEquals(9,$count);
     }
 }
